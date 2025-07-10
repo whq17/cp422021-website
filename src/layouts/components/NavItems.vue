@@ -112,16 +112,7 @@ import VerticalNavLink from '@layouts/components/VerticalNavLink.vue';
   />
   
  
-  <VerticalNavLink
-    :item="{
-      title: 'Email',
-      icon: 'ri-mail-line',
-      href: 'https://demos.themeselection.com/materio-vuetify-vuejs-admin-template/demo-1/apps/email',
-      target: '_blank',
-      badgeContent: 'Pro',
-      badgeClass: 'bg-light-primary text-primary',
-    }"
-  />
+  
   <VerticalNavLink
     :item="{
       title: 'Chat',
