@@ -1,7 +1,7 @@
 <script setup>
-import VerticalNavSectionTitle from '@/@layouts/components/VerticalNavSectionTitle.vue';
-import VerticalNavGroup from '@layouts/components/VerticalNavGroup.vue';
-import VerticalNavLink from '@layouts/components/VerticalNavLink.vue';
+import VerticalNavSectionTitle from '@/@layouts/components/VerticalNavSectionTitle.vue'
+import VerticalNavGroup from '@layouts/components/VerticalNavGroup.vue'
+import VerticalNavLink from '@layouts/components/VerticalNavLink.vue'
 </script>
 
 <template>
@@ -20,79 +20,6 @@ import VerticalNavLink from '@layouts/components/VerticalNavLink.vue';
         to: '/dashboard',
       }"
     />
-    <VerticalNavLink
-      :item="{
-        title: 'CRM',
-        href: 'https://demos.themeselection.com/materio-vuetify-vuejs-admin-template/demo-1/dashboards/crm',
-        target: '_blank',
-        badgeContent: 'Pro',
-        badgeClass: 'bg-light-primary text-primary',
-      }"
-    />
-    <VerticalNavLink
-      :item="{
-        title: 'ECommerce',
-        href: 'https://demos.themeselection.com/materio-vuetify-vuejs-admin-template/demo-1/dashboards/ecommerce',
-        target: '_blank',
-        badgeContent: 'Pro',
-        badgeClass: 'bg-light-primary text-primary',
-      }"
-    />
-    <VerticalNavLink
-      :item="{
-        title: 'Academy',
-        href: 'https://demos.themeselection.com/materio-vuetify-vuejs-admin-template/demo-1/dashboards/academy',
-        target: '_blank',
-        badgeContent: 'Pro',
-        badgeClass: 'bg-light-primary text-primary',
-      }"
-    />
-    <VerticalNavLink
-      :item="{
-        title: 'Logistics',
-        href: 'https://demos.themeselection.com/materio-vuetify-vuejs-admin-template/demo-1/dashboards/logistics',
-        target: '_blank',
-        badgeContent: 'Pro',
-        badgeClass: 'bg-light-primary text-primary',
-      }"
-    />
-  
-  >
-    <VerticalNavLink
-      :item="{
-        title: 'Landing',
-        href: 'https://demos.themeselection.com/materio-vuetify-vuejs-admin-template/demo-1/front-pages/landing-page',
-        target: '_blank',
-      }"
-    />
-    <VerticalNavLink
-      :item="{
-        title: 'Pricing',
-        href: 'https://demos.themeselection.com/materio-vuetify-vuejs-admin-template/demo-1/front-pages/pricing',
-        target: '_blank',
-      }"
-    />
-    <VerticalNavLink
-      :item="{
-        title: 'Payment',
-        href: 'https://demos.themeselection.com/materio-vuetify-vuejs-admin-template/demo-1/front-pages/payment',
-        target: '_blank',
-      }"
-    />
-    <VerticalNavLink
-      :item="{
-        title: 'Checkout',
-        href: 'https://demos.themeselection.com/materio-vuetify-vuejs-admin-template/demo-1/front-pages/checkout',
-        target: '_blank',
-      }"
-    />
-    <VerticalNavLink
-      :item="{
-        title: 'Help Center',
-        href: 'https://demos.themeselection.com/materio-vuetify-vuejs-admin-template/demo-1/front-pages/help-center',
-        target: '_blank',
-      }"
-    />
   </VerticalNavGroup>
 
   <!-- 👉 Apps & Pages -->
@@ -101,10 +28,7 @@ import VerticalNavLink from '@layouts/components/VerticalNavLink.vue';
       heading: 'Apps & Pages',
     }"
   />
-  
- 
-  
-  
+
   <VerticalNavLink
     :item="{
       title: 'Account Settings',
@@ -176,8 +100,7 @@ import VerticalNavLink from '@layouts/components/VerticalNavLink.vue';
       to: '/form-layouts',
     }"
   />
-  
- 
+
   <VerticalNavLink
     :item="{
       title: 'Tables',
@@ -186,27 +109,4 @@ import VerticalNavLink from '@layouts/components/VerticalNavLink.vue';
     }"
   />
 
-  <!-- 👉 Others -->
-  <VerticalNavSectionTitle
-    :item="{
-      heading: 'Others',
-    }"
-  />
- 
-  <VerticalNavLink
-    :item="{
-      title: 'Documentation',
-      icon: 'ri-article-line',
-      href: 'https://demos.themeselection.com/materio-vuetify-vuejs-admin-template/documentation/',
-      target: '_blank',
-    }"
-  />
-  <VerticalNavLink
-    :item="{
-      title: 'Raise Support',
-      href: 'https://github.com/themeselection/materio-vuetify-vuejs-admin-template-free/issues',
-      icon: 'ri-lifebuoy-line',
-      target: '_blank',
-    }"
-  />
 </template>
