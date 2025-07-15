@@ -1,5 +1,16 @@
 <script setup>
 import InfoCard from "@/components/cards/InfoCard.vue";
+import TableInfoCard from "@/components/cards/TableInfoCard.vue";
+import { useTableStore } from "@/store/table";
+
+const tableStore = useTableStore();
+const reserveTable = (table) =>{
+  table.status = 'reserve'
+  table.checkin = new Date()
+};
+
+
+
 </script>
 <template>
   <VCard>
@@ -54,19 +65,15 @@ import InfoCard from "@/components/cards/InfoCard.vue";
   <VCard class="mt-8">
     <VCardText>
       <VRow>
-      <VCol cols="3"><VBtn block color="deep-purple-accent-2" class="text-white d-flex flex-column justify align-center" height="100"><VIcon size="32">mdi-table-chair</VIcon>โต๊ะว่าง</VBtn></VCol>
-      <VCol cols="3"><VBtn block color="deep-purple-accent-2" class="text-white d-flex flex-column justify align-center" height="100"><VIcon size="32">mdi-table-chair</VIcon>โต๊ะว่าง</VBtn></VCol>
-      <VCol cols="3"><VBtn block color="deep-purple-accent-2" class="text-white d-flex flex-column justify align-center" height="100"><VIcon size="32">mdi-table-chair</VIcon>โต๊ะว่าง</VBtn></VCol>
-      <VCol cols="3"><VBtn block color="deep-purple-accent-2" class="text-white d-flex flex-column justify align-center" height="100"><VIcon size="32">mdi-table-chair</VIcon>โต๊ะว่าง</VBtn></VCol>
-      <VCol cols="3"><VBtn block color="deep-purple-accent-2" class="text-white d-flex flex-column justify align-center" height="100"><VIcon size="32">mdi-table-chair</VIcon>โต๊ะว่าง</VBtn></VCol>
-      <VCol cols="3"><VBtn block color="deep-purple-accent-2" class="text-white d-flex flex-column justify align-center" height="100"><VIcon size="32">mdi-table-chair</VIcon>โต๊ะว่าง</VBtn></VCol>
-      <VCol cols="3"><VBtn block color="deep-purple-accent-2" class="text-white d-flex flex-column justify align-center" height="100"><VIcon size="32">mdi-table-chair</VIcon>โต๊ะว่าง</VBtn></VCol>
-      <VCol cols="3"><VBtn block color="deep-purple-accent-2" class="text-white d-flex flex-column justify align-center" height="100"><VIcon size="32">mdi-table-chair</VIcon>โต๊ะว่าง</VBtn></VCol>
-      <VCol cols="3"><VBtn block color="deep-purple-accent-2" class="text-white d-flex flex-column justify align-center" height="100"><VIcon size="32">mdi-table-chair</VIcon>โต๊ะว่าง</VBtn></VCol>
-      <VCol cols="3"><VBtn block color="deep-purple-accent-2" class="text-white d-flex flex-column justify align-center" height="100"><VIcon size="32">mdi-table-chair</VIcon>โต๊ะว่าง</VBtn></VCol>
+      <VCol v-for="table in tableStore.tables" cols="3" class="d-flex align-center justify-center">
+        <v-btn @click="reserveTable(table)" size="x-large" block prepend-icon="mdi-table" height="200">
+        {{ table.name }} - {{ table.status }}</v-btn>
+      <TableInfoCard :table="table" />
+      </VCol>
       
+
       </VRow>
       
-    </VCardText>
-  </VCard>
+    </VCardText> 
+4  </VCard>
 </template>
