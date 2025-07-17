@@ -97,15 +97,7 @@ const reserveTable = (table) => {
         </VCol>
       </VRow>
 
-      <!-- แสดงรายการโต๊ะที่ถูกจอง (ถ้าต้องการแสดงนอกตาราง) -->
-      <!--
-      <div class="mt-6">
-        <h3>โต๊ะที่ถูกจอง</h3>
-        <div v-for="table in reservedTables" :key="table.id || table.name">
-          <TableInfoCard :table="table" />
-        </div>
-      </div>
-      -->
+      
     </VCardText>
   </VCard>
 </template>
