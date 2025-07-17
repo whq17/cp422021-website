@@ -9,6 +9,8 @@ declare module 'vue' {
   export interface GlobalComponents {
     '(1)': typeof import('./src/components/cards/InfoCard (1).vue')['default']
     AddDialog: typeof import('./src/components/dialogs/AddDialog.vue')['default']
+    AddMenuDialog: typeof import('./src/components/dialogs/AddMenuDialog.vue')['default']
+    BillDialog: typeof import('./src/components/dialogs/BillDialog.vue')['default']
     CardStatisticsHorizontal: typeof import('./src/@core/components/cards/CardStatisticsHorizontal.vue')['default']
     CardStatisticsVertical: typeof import('./src/@core/components/cards/CardStatisticsVertical.vue')['default']
     CardStatisticsWithImages: typeof import('./src/@core/components/cards/CardStatisticsWithImages.vue')['default']
